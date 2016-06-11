@@ -1,21 +1,44 @@
 #header-occupation {
-    margin: 20px 0 20px 0;
+    text-align: center;
+    margin-top: 20px;
 }
 #portfolio {
     background-color: #EFF6F9;
 }
 #portf-pic {
-    width: 100%;
-    height: 100%;
+    max-width: 70%;
     display: block;
     margin: auto;
+    border-radius: 10%;
 }
 #pic-div {
-    margin-top: 10%;
-    margin-left: 60%;
+    margin-top: 300px;
     vertical-align: middle;
+    position: relative;
+    margin: 100px auto;
+    max-width: 40%;
+    padding-top: 20px;
 }
 div.project-descriptions {
     height: 350px;
 
+}
+@media (min-width: 768px) {
+
+}
+
+.title-content {
+    width: 50% !important;
+    position: relative !important;
+    top: 100px !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+.title-content-inner {
+    margin: 0 auto !important;
+}
+
+.row .name-title-pic {
+    position: relative;
 }
