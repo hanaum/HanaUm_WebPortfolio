@@ -2,8 +2,8 @@
     text-align: center;
     margin-top: 20px;
 }
-#portfolio {
-    background-color: #EFF6F9;
+#old-portfolio {
+    background-color: #d9ebf2;
 }
 #portf-pic {
     max-width: 70%;
@@ -11,6 +11,15 @@
     margin: auto;
     border-radius: 10%;
 }
+.portfolio-title {
+    margin-top: 0 auto;
+    color: #75aabd;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
 #pic-div {
     margin-top: 300px;
     vertical-align: middle;
@@ -21,9 +30,6 @@
 }
 div.project-descriptions {
     height: 350px;
-
-}
-@media (min-width: 768px) {
 
 }
 
