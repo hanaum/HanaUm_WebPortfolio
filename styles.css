@@ -1,0 +1,80 @@
+body, h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  background-color: #e6eeff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccccff;
+}
+
+header {
+  padding-top: 100px;
+}
+
+#name {
+  font-family: 'Khand', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+#name:hover {
+  color: #3399FF;;
+}
+
+.home-name {
+  cursor: pointer;
+}
+
+.inline-display {
+  display: inline-block;
+}
+
+.social {
+  position: absolute;
+  right: 9.375em;
+  top: 1.5em;
+}
+
+.social-link {
+  margin-left: 3.750em;
+}
+
+.fa {
+  -webkit-transition-property: font-size; /* Safari */
+  -webkit-transition-duration: .2s; /* Safari */
+  transition-property: font-size;
+  transition-duration: .2s;
+}
+
+.fa-size {
+  font-size: 30px !important;
+}
+.social .fa:hover {
+  color: #3399FF;
+  font-size: 35px !important;
+}
+.fa-github-alt {
+  cursor: pointer;
+  color: black;
+  position: fixed;
+}
+.fa-linkedin-square {
+  cursor: pointer;
+  color: black;
+  position: fixed;
+}
+.fa-envelope {
+  cursor: pointer;
+  color: black;
+  position: fixed;
+}
+
+.self-bio {
+  width: 100%;
+}

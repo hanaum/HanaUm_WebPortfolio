@@ -9,210 +9,30 @@
     with experience in LAMP and Ruby on Rails. Check out my website to learn more!">
     <meta name="author" content="">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-     <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Khand' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://use.fontawesome.com/45d44141b3.js"></script>
 </head>
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+    <nav class="nav navbar-fixed-top">
+        <div class="nav-container">
+            <div class="home-name inline-display">
+                <h3 id="name">Hana Um</h3>
+                <p class="">Front End Developer</p>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#new-portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact me</a>
-                    </li>
-                </ul>
+            <div class="social inline-display">
+                <a class="social-link" href="https://github.com/hanaum" target="_blank"><i class="fa fa-github-alt fa-size" aria-hidden="true"></i></a>
+                <a class="social-link" href="https://www.linkedin.com/in/hanaum" target="_blank"><i class="fa fa-linkedin-square fa-size" aria-hidden="true"></i></a>
+                <a class="social-link" href="mailto:hanau12@gmail.com" target="_blank"><i class="fa fa-envelope fa-size" aria-hidden="true"></i></a>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
-
-    <header>
-        <div class="row name-title-pic">
-            <div class="title-content">
-                <div class="title-content-inner">
-                    <h1  style="color: #506066;" id="header-myname">Hana Um</h1>
-                    <p id="header-occupation" style="color: black;">{{ Front End Web Developer }}</p>
-                    <a href="#about" class="btn btn-primary btn-xl page-scroll">a bit about me</a>
-                </div>
-            </div>
-            <div id="pic-div" class="">
-                <img id="portf-pic" src="images/portfoliopic.jpg">
-            </div>
-        </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Hi There!</h2>
-                    <hr class="light">
-                    <p class="text-faded">I was born and raised in Queens, NY and have relocated permanently to the Silicon Valley to pursue my dreams of being a developer. I come from a biomedical engineering background and have taken the plunge into the world of tech. I graduated from a coding bootcamp and worked at a fast-paced startup where I've developed into a self-sufficient front end developer. I've always been very passionate about technologies and have held interest in web development for quite some time. I have solid knowledge of front-end and have a passion for design and UI/UX.</p>
-                    <a href="#contact" class="btn btn-default btn-xl page-scroll">contact me</a>
-                    <a href="Resume_Hana_Um.pdf" target="_blank" class="btn btn-default btn-xl page-scroll">resume</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="no-padding" id="new-portfolio">
-        <div class="container-fluid">
-            <h2 class="portfolio-title">Recent Work</h2>
-            <div class="row ">
-                <div class="padding-projects col-md-6 col-sm-12">
-                    <a href="https://www.kryptnostic.com/" target="_blank" class="portfolio-box">
-                        <img src="images/kryptnostic.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Kryptnostic, Inc Company Site
-                                </div>
-                                <div class="project-category text-faded">
-                                    Created the main company website from scratch using Twitter Bootstrap, Webpack, HTML5/CSS3, JavaScript. Implemented designs for user-friendly interactions and functionality. Worked with design and marketing team members to provide clean UI/UX and to convey information about the company's secure application.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="padding-projects col-md-6 col-sm-12">
-                    <a href="https://kodex.im/app/#/login" target="_blank" class="portfolio-box">
-                        <img src="images/kodex.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Kodex
-                                </div>
-                                <div class="project-category text-faded">
-                                    Built many of the features in Kryptnostic's product, Kodex, a secure communication platform with homomorphic encryption. Some features include admin panels, user listing, archived/muted channels, channel notifications, front-end support for paging, and email verifications. Technologies used: HTML5, CSS3, LESS, JavaScript, AngularJS, Gulp, Karma, Jasmine.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="no-padding" id="old-portfolio">
-        <div class="container-fluid">
-            <h2 class="portfolio-title">Past Projects</h2>
-            <div class="row ">
-                <div class="padding-projects col-md-6 col-sm-12">
-                    <a href="http://choosetogo.herokuapp.com/" target="_blank" class="portfolio-box">
-                        <img src="images/choosetogo.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Choose To Go!
-                                </div>
-                                <div class="project-category text-faded">
-                                    A travel application built in Ruby on Rails. Allows users to keep track of
-                                    their travel list and utilizes Google Maps API and Distance Matrix API to plan trips based on information provided about that location.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="padding-projects col-md-6 col-sm-12">
-                    <a href="http://pathfinderedu.herokuapp.com" target="_blank" class="portfolio-box">
-                        <img src="images/pathfinderedu.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    PathfinderEDU
-                                </div>
-                                <div class="project-category text-faded">
-                                    HackingEDU Hackathon Submission, Pathfinder is a specialized career planning app geared towards helping students plan their education around acquiring skills required by specific positions at real companies. Using Pathfinder, students complete their education equipped with the specific skills needed for the careers and positions they want.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="padding-projects col-md-6 col-sm-12">
-                    <a href="http://healthamp.herokuapp.com" target="_blank" class="portfolio-box">
-                        <img src="images/healthamp.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    HealthAMP
-                                </div>
-                                <div class="project-category text-faded">
-                                    A health web application written in JavaScript using MEAN stack. Provides health information on how to supplement diets and allows users to keep track of their health. Users can plan/customize their own todo list of what supplements to eat to better their health.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="padding-projects col-md-6 col-sm-12">
-                    <a href="http://pledgeathon.herokuapp.com" target="_blank" class="portfolio-box">
-                        <img src="images/pledge.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Pledge-A-Thon
-                                </div>
-                                <div class="project-category text-faded">
-                                    MasterCard Hackathon 2015 submission, Pledge-A-Thon is a charity application that allows people to sponsor volunteers to raise donations for a chosen charity.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Get in Contact with Me!</h2>
-                    <hr class="primary">
-                    <p>I'm currently looking for a developer position in the Bay Area. Please feel free to reach out to me and shoot me an email!</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:hanau12@gmail.com">hanau12@gmail.com</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="https://github.com/hanaum">My GitHub</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="https://www.linkedin.com/pub/hana-um/b5/321/bb1">My LinkedIn</a></p>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- jQuery -->
 
