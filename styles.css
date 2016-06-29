@@ -1,30 +1,49 @@
 body {
   margin: 0;
-  background-color: ;
 }
+
 body, h1, h2, h3, h4, p {
   padding: 0;
   font-family: 'Dosis', sans-serif;
 }
 
 nav {
-  background-color: #93c178;
+  background-color: #f2f2f2;
   margin: 0;
   position: fixed;
   width: 100%;
   z-index: 1;
   padding: 10px 20px;
-  border-bottom: 2px solid #465c8b;
-  color: white;
+  opacity: 0.9;
+  /*border-bottom: 2px solid #cf6766;*/
+  color: #737373;
 }
 
 header {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 section.dark-back {
-  background-color: #465c8b;
-  color: #e6e6e6;
+  background-color: #e6e6e6;
+  color: #737373;
+}
+
+button {
+  background-color: #cf6766;
+  border: transparent;
+  border-radius: 10px;
+  padding: 7px 40px;
+  cursor: pointer;
+  font-size: 0.938em;
+  color: white;
+  -webkit-transition-property: background-color; /* Safari */
+  -webkit-transition-duration: .2s; /* Safari */
+  transition-property: background-color;
+  transition-duration: .2s;
+}
+
+button:hover {
+  background-color: #ff5050;
 }
 
 #name {
@@ -39,7 +58,7 @@ section.dark-back {
 }
 
 #name:hover {
-  color: #465c8b;
+  color: #cf6766;
 }
 
 #portfolio-img {
@@ -53,13 +72,23 @@ section.dark-back {
   padding-top: 1.875em;
 }
 
+.bio-container {
+  padding-top: 1.875em;
+  height: 100%;
+  background: url("images/header.jpg") no-repeat;
+}
+
 .section-title {
   font-size: 40px;
-  color: #93c178;
+  color: #cf6766;
 }
 
 .text-center {
   text-align: center;
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 .home-name {
@@ -95,22 +124,22 @@ section.dark-back {
   font-size: 30px !important;
 }
 .social .fa:hover {
-  color: #465c8b;
+  color: #cf6766;
   font-size: 35px !important;
 }
 .fa-github-alt {
   cursor: pointer;
-  color: white;
+  color: #737373;
   position: fixed;
 }
 .fa-linkedin-square {
   cursor: pointer;
-  color: white;
+  color: #737373;
   position: fixed;
 }
 .fa-envelope {
   cursor: pointer;
-  color: white;
+  color: #737373;
   position: fixed;
 }
 .self-bio {
@@ -118,13 +147,13 @@ section.dark-back {
 }
 .self-bio p {
   margin: 10px auto;
-  color: #808080;
+  color: #f2f2f2;
   font-size: 30px;
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
 }
 
-p.info-highlight {
+.info-highlight {
   color: #cf6766 !important;
 }
 
@@ -138,8 +167,13 @@ p.info-highlight {
 .project-img {
   width: 100%;
 }
+
+.project-link {
+  border-radius: 3%;
+}
+
 .snapshot {
-  width: 500px;
+  width: 600px;
   text-align: right;
 }
 
@@ -149,4 +183,8 @@ p.info-highlight {
   text-align: left;
   margin-right: 3.125em;
   vertical-align: top;
+}
+
+.info p {
+  margin: 10px 0;
 }
