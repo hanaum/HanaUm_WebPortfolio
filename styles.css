@@ -8,21 +8,25 @@ body, h1, h2, h3, h4, p {
 }
 
 nav {
-  background-color: #f2f2f2;
+  background-color: #ffaa80;
   margin: 0;
   position: fixed;
   width: 100%;
   z-index: 1;
   padding: 10px 20px;
   opacity: 0.9;
-  color: #737373;
 }
 
 header {
   padding-top: 80px;
 }
 
-section.dark-back {
+section.recent-projects {
+  background-color: white;
+  color: #737373;
+}
+
+section.past-projects {
   background-color: #e6e6e6;
   color: #737373;
 }
@@ -57,7 +61,7 @@ button:hover {
 }
 
 #name:hover {
-  color: #cf6766;
+  color: #2952a3;
 }
 
 #portfolio-img {
@@ -123,28 +127,28 @@ button:hover {
   font-size: 30px !important;
 }
 .social .fa:hover {
-  color: #cf6766;
+  color: #ff5050;
   font-size: 35px !important;
 }
 .fa-github-alt {
   cursor: pointer;
-  color: #737373;
+  color: #595959;
   position: fixed;
 }
 .fa-linkedin-square {
   cursor: pointer;
-  color: #737373;
+  color: #595959;
   position: fixed;
 }
 .fa-envelope {
   cursor: pointer;
-  color: #737373;
+  color: #595959;
   position: fixed;
 }
 .self-bio {
   margin: 11.250em 0.625em;
 }
-.self-bio p {
+.self-bio p, .self-bio a {
   margin: 10px auto;
   color: #f2f2f2;
   font-size: 30px;
@@ -152,12 +156,17 @@ button:hover {
   text-transform: uppercase;
 }
 
+.resume-link {
+  padding-top: 20px;
+  display: block;
+}
+
 .info-highlight {
   color: #cf6766 !important;
 }
 
 .project-container {
-  padding: 1.250em;
+  padding: 1.250em 1.250em 2em 1.250em;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -171,14 +180,20 @@ button:hover {
   border-radius: 3%;
 }
 
+.project-title {
+  font-weight: 600;
+  font-size: 1.4375em;
+  color: #cf6766;
+}
+
 .snapshot {
-  width: 600px;
+  width: 640px;
   text-align: right;
 }
 
 .info {
   width: 30%;
-  font-size: 1.250em;;
+  font-size: 1.1em;;
   text-align: left;
   margin-right: 3.125em;
   vertical-align: top;
