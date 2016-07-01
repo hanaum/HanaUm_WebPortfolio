@@ -39,6 +39,9 @@
 }
 
 @media (max-width: 420px) {
+  .self-bio {
+    margin: 5.250em 0.625em;
+  }
   .social {
     right: 6.375em;
   }
