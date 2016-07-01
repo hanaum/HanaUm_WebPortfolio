@@ -1,6 +1,6 @@
 @media (min-width: 1046px) {
   #normal-view {
-    display: block;
+    display: initial;
   }
   #mobile-view {
     display: none;
@@ -11,13 +11,38 @@
     display: none;
   }
   #mobile-view {
-    display: block;
+    display: initial;
   }
   .info {
     text-align: center;
-    width: 100%;
+    width: 80%;
+    margin-right: initial;
   }
   .snapshot {
     width: 85%;
+  }
+
+  .footer-content {
+      margin: 0 auto;
+      width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .self-bio p, .self-bio a {
+    margin: 10px auto;
+    color: #f2f2f2;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 420px) {
+  .social {
+    right: 6.375em;
+  }
+  .social-link {
+    margin-left: 2.750em;
   }
 }

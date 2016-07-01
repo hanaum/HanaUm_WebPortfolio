@@ -18,7 +18,7 @@ nav {
 }
 
 header {
-  padding-top: 4.8125em;
+  padding-top: 4.5125em;
 }
 
 footer {
@@ -236,4 +236,9 @@ img {
 
 .info p {
   margin: 10px 0;
+}
+
+.footer-content {
+    margin: 0 auto;
+    width: 700px;
 }
