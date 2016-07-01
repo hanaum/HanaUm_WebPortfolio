@@ -21,6 +21,13 @@ header {
   padding-top: 80px;
 }
 
+footer {
+  background-color: #ffaa80;
+  padding: 30px;
+  margin: 0;
+  color: white;
+}
+
 section.recent-projects {
   background-color: white;
   color: #737373;
@@ -49,6 +56,18 @@ button:hover {
   background-color: #ff5050;
 }
 
+img {
+  margin-top: 20px;
+  width: 140px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+#btn-resume {
+  padding-top: 20px;
+  display: block;
+}
+
 #name {
   font-family: 'Dosis', sans-serif;
   font-size: 30px;
@@ -69,6 +88,14 @@ button:hover {
   display: block;
   border-radius: 10%;
   margin: 0 auto;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
 }
 
 .container {
@@ -102,6 +129,10 @@ button:hover {
   margin: 0;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .inline-display {
   display: inline-block;
 }
@@ -114,6 +145,10 @@ button:hover {
 
 .social-link {
   margin-left: 3.750em;
+}
+
+.footer-title {
+  color: #595959;
 }
 
 .fa {

@@ -1,0 +1,15 @@
+@media (max-width: 1045px) {
+  #normal-view {
+    display: none;
+  }
+  #mobile-view {
+    display: block;
+  }
+  .info {
+    text-align: center;
+    width: 100%;
+  }
+  .snapshot {
+    width: 85%;
+  }
+}

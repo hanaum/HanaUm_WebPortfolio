@@ -8,9 +8,10 @@
   <meta name="description" content="I'm Hana Um. FullStack Web Developer. Coding is my jam! Proficient with MEAN Stack JavaScript
   with experience in LAMP and Ruby on Rails. Check out my website to learn more!">
   <meta name="author" content="">
-  <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css" type="text/css">
+  <!-- <link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css" type="text/css"> -->
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="responsive.css" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -19,7 +20,6 @@
 </head>
 
 <body id="page-top">
-
   <nav class="nav navbar-fixed-top">
     <div class="nav-container">
       <div class="home-name inline-display">
@@ -49,93 +49,192 @@
         <p class="info-highlight text-center">Passionate about the front end</p>
         <p class="text-center">Obsessed with beautiful UI</p>
         <p class="text-center">In love with clean code</p>
-
+        <a class="text-center" id="btn-resume" href="Resume_Hana_Um.pdf" target="_blank"><button>My Resume</button></a>
       </div>
     </div>
   </header>
 
-  <section class="recent-projects">
-    <div class="container">
-      <h1 class="section-title text-center">Recent Work</h1>
-      <div class="project-container text-center">
-        <div class="info inline-display">
-          <p class="project-title ">Kryptnostic.com</p>
-          <p><span class="info-highlight">About:</span> Kryptnostic, Inc's main website for a secure communication platform.</p>
-          <p><span class="info-highlight">My Role:</span> Re-built the entire website from the ground up. Implemented designs for user-friendly interactions and functionality. Worked with design and marketing team members to provide clean UI/UX and to convey information about the company's secure application.</p>
-          <p><span class="info-highlight">Technologies used:</span> JavaScript, HTML5, CSS3, Twitter Boostrap, WebPack</p>
-          <a class="project-link no-underline" href="https://www.kryptnostic.com/" target="_blank"><button>Link to site</button></a>
+
+<!-- Normal Layout -->
+  <div id="normal-view">
+    <section class="recent-projects">
+      <div class="container">
+        <h1 class="text-uppercase section-title text-center">Recent Work</h1>
+        <div class="project-container text-center">
+          <div class="info inline-display">
+            <p class="project-title ">Kryptnostic.com</p>
+            <p><span class="info-highlight">About:</span> Kryptnostic, Inc's main website for a secure communication platform.</p>
+            <p><span class="info-highlight">My Role:</span> Re-built the entire website from the ground up. Implemented designs for user-friendly interactions and functionality. Worked with design and marketing team members to provide clean UI/UX and to convey information about the company's secure application.</p>
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, HTML5, CSS3, Twitter Boostrap, WebPack</p>
+            <a class="project-link no-underline" href="https://www.kryptnostic.com/" target="_blank"><button>Link to site</button></a>
+          </div>
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/kryptnostic.png">
+          </div>
         </div>
-        <div class="snapshot inline-display">
-          <img class="project-img" src="images/kryptnostic.png">
-        </div>
-      </div>
-      <div class="project-container text-center">
-        <div class="info inline-display">
-          <p class="project-title">Kodex</p>
-          <p><span class="info-highlight">About:</span> Kryptnostic, Inc's flagship product. A homomorphically encrypted secure communication platform.</p>
-          <p><span class="info-highlight">My Role:</span> Implemented features such as administrator panel controls, user listing, archived/muted channels, notifications, frontend support for paging, email verification, pasting browser and file system images, and multiple performance optimizations. Took charge of UI/UX design implementation which included rewriting the login and registration pages, user settings options, and email templates.
-</p>   
-          <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, HTML5, CSS3, LESS, Gulp, Karma, Jasmine, WebPack</p>
-          <a class="project-link no-underline" href="https://kodex.im/" target="_blank"><button>Link to site</button></a>
-        </div>
-        <div class="snapshot inline-display">
-          <img class="project-img" src="images/kodex.png">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="past-projects">
-    <div class="container">
-      <h1 class="section-title text-center">Past Projects</h1>
-      <div class="project-container text-center">
-        <div class="info inline-display">
-          <p class="project-title ">Choose To Go!</p>
-          <p><span class="info-highlight">About:</span> 
-              A travel application built in Ruby on Rails. Allows users to keep track of
-              their travel list and utilizes Google Maps API and Distance Matrix API to plan trips based on information provided about that location.</p>
-          <p><span class="info-highlight">Technologies used:</span> Ruby on Rails, HTML5, CSS3, Twitter Boostrap, PostgreSQL</p>
-          <a class="project-link no-underline" href="http://choosetogo.herokuapp.com/" target="_blank"><button>Link to site</button></a>
-        </div>
-        <div class="snapshot inline-display">
-          <img class="project-img" src="images/choosetogo.png">
+        <div class="project-container text-center">
+          <div class="info inline-display">
+            <p class="project-title">Kodex</p>
+            <p><span class="info-highlight">About:</span> Kryptnostic, Inc's flagship product. A homomorphically encrypted secure communication platform.</p>
+            <p><span class="info-highlight">My Role:</span> Implemented features such as administrator panel controls, user listing, archived/muted channels, notifications, frontend support for paging, email verification, pasting browser and file system images, and multiple performance optimizations. Took charge of UI/UX design implementation which included rewriting the login and registration pages, user settings options, and email templates.</p>   
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, HTML5, CSS3, LESS, Gulp, Karma, Jasmine, WebPack</p>
+            <a class="project-link no-underline" href="https://kodex.im/" target="_blank"><button>Link to site</button></a>
+          </div>
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/kodex.png">
+          </div>
         </div>
       </div>
-      <div class="project-container text-center">
-        <div class="info inline-display">
-          <p class="project-title">PathfinderEDU</p>
-          <p><span class="info-highlight">About:</span> HackingEDU Hackathon Submission, Pathfinder is a specialized career planning app geared towards helping students plan their education around acquiring skills required by specific positions at real companies. Using Pathfinder, students complete their education equipped with the specific skills needed for the careers and positions they want.</p>  
-          <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
-          <a class="project-link no-underline" href="http://pathfinderedu.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+    </section>
+    <section class="past-projects">
+      <div class="container">
+        <h1 class="text-uppercase section-title text-center">Past Projects</h1>
+        <div class="project-container text-center">
+          <div class="info inline-display">
+            <p class="project-title ">Choose To Go!</p>
+            <p><span class="info-highlight">About:</span> 
+                A travel application built in Ruby on Rails. Allows users to keep track of
+                their travel list and utilizes Google Maps API and Distance Matrix API to plan trips based on information provided about that location.</p>
+            <p><span class="info-highlight">Technologies used:</span> Ruby on Rails, HTML5, CSS3, Twitter Boostrap, PostgreSQL</p>
+            <a class="project-link no-underline" href="http://choosetogo.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+          </div>
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/choosetogo.png">
+          </div>
         </div>
-        <div class="snapshot inline-display">
-          <img class="project-img" src="images/pathfinderedu.png">
+        <div class="project-container text-center">
+          <div class="info inline-display">
+            <p class="project-title">PathfinderEDU</p>
+            <p><span class="info-highlight">About:</span> HackingEDU Hackathon Submission, Pathfinder is a specialized career planning app geared towards helping students plan their education around acquiring skills required by specific positions at real companies. Using Pathfinder, students complete their education equipped with the specific skills needed for the careers and positions they want.</p>  
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
+            <a class="project-link no-underline" href="http://pathfinderedu.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+          </div>
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/pathfinderedu.png">
+          </div>
+        </div>
+        <div class="project-container text-center">
+          <div class="info inline-display">
+            <p class="project-title">HealthAMP</p>
+            <p><span class="info-highlight">About:</span> A health web application written in JavaScript using MEAN stack. Provides health information on how to supplement diets and allows users to keep track of their health. Users can plan/customize their own todo list of what supplements to eat to better their health.
+                                  </p>  
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
+            <a class="project-link no-underline" href="http://healthamp.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+          </div>
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/healthamp.png">
+          </div>
+        </div>
+        <div class="project-container text-center">
+          <div class="info inline-display">
+            <p class="project-title">Pledge-A-Thon</p>
+            <p><span class="info-highlight">About:</span> MasterCard Hackathon 2015 submission, Pledge-A-Thon is a charity application that allows people to sponsor volunteers to raise donations for a chosen charity.</p>  
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
+            <a class="project-link no-underline" href="http://pledgeathon.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+          </div>
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/pledge.png">
+          </div>
         </div>
       </div>
-      <div class="project-container text-center">
-        <div class="info inline-display">
-          <p class="project-title">HealthAMP</p>
-          <p><span class="info-highlight">About:</span> A health web application written in JavaScript using MEAN stack. Provides health information on how to supplement diets and allows users to keep track of their health. Users can plan/customize their own todo list of what supplements to eat to better their health.
-                                </p>  
-          <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
-          <a class="project-link no-underline" href="http://healthamp.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+    </section>
+  </div>
+
+
+<!-- Mobile layout -->
+  <div id="mobile-view">
+    <section class="recent-projects">
+      <div class="container">
+        <h1 class="text-uppercase section-title text-center">Recent Work</h1>
+        <div class="project-container text-center">
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/kryptnostic.png">
+          </div>
+          <div class="info inline-display">
+            <p class="project-title ">Kryptnostic.com</p>
+            <p><span class="info-highlight">About:</span> Kryptnostic, Inc's main website for a secure communication platform.</p>
+            <p><span class="info-highlight">My Role:</span> Re-built the entire website from the ground up. Implemented designs for user-friendly interactions and functionality. Worked with design and marketing team members to provide clean UI/UX and to convey information about the company's secure application.</p>
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, HTML5, CSS3, Twitter Boostrap, WebPack</p>
+            <a class="project-link no-underline" href="https://www.kryptnostic.com/" target="_blank"><button>Link to site</button></a>
+          </div>
         </div>
-        <div class="snapshot inline-display">
-          <img class="project-img" src="images/healthamp.png">
+        <div class="project-container text-center">
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/kodex.png">
+          </div>
+          <div class="info inline-display">
+            <p class="project-title">Kodex</p>
+            <p><span class="info-highlight">About:</span> Kryptnostic, Inc's flagship product. A homomorphically encrypted secure communication platform.</p>
+            <p><span class="info-highlight">My Role:</span> Implemented features such as administrator panel controls, user listing, archived/muted channels, notifications, frontend support for paging, email verification, pasting browser and file system images, and multiple performance optimizations. Took charge of UI/UX design implementation which included rewriting the login and registration pages, user settings options, and email templates.</p>   
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, HTML5, CSS3, LESS, Gulp, Karma, Jasmine, WebPack</p>
+            <a class="project-link no-underline" href="https://kodex.im/" target="_blank"><button>Link to site</button></a>
+          </div>
         </div>
       </div>
-      <div class="project-container text-center">
-        <div class="info inline-display">
-          <p class="project-title">Pledge-A-Thon</p>
-          <p><span class="info-highlight">About:</span> MasterCard Hackathon 2015 submission, Pledge-A-Thon is a charity application that allows people to sponsor volunteers to raise donations for a chosen charity.</p>  
-          <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
-          <a class="project-link no-underline" href="http://pledgeathon.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+    </section>
+    <section class="past-projects">
+      <div class="container">
+        <h1 class="text-uppercase section-title text-center">Past Projects</h1>
+        <div class="project-container text-center">
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/choosetogo.png">
+          </div>
+          <div class="info inline-display">
+            <p class="project-title ">Choose To Go!</p>
+            <p><span class="info-highlight">About:</span> 
+                A travel application built in Ruby on Rails. Allows users to keep track of
+                their travel list and utilizes Google Maps API and Distance Matrix API to plan trips based on information provided about that location.</p>
+            <p><span class="info-highlight">Technologies used:</span> Ruby on Rails, HTML5, CSS3, Twitter Boostrap, PostgreSQL</p>
+            <a class="project-link no-underline" href="http://choosetogo.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+          </div>
         </div>
-        <div class="snapshot inline-display">
-          <img class="project-img" src="images/pledge.png">
+        <div class="project-container text-center">
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/pathfinderedu.png">
+          </div>
+          <div class="info inline-display">
+            <p class="project-title">PathfinderEDU</p>
+            <p><span class="info-highlight">About:</span> HackingEDU Hackathon Submission, Pathfinder is a specialized career planning app geared towards helping students plan their education around acquiring skills required by specific positions at real companies. Using Pathfinder, students complete their education equipped with the specific skills needed for the careers and positions they want.</p>  
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
+            <a class="project-link no-underline" href="http://pathfinderedu.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+          </div>
+        </div>
+        <div class="project-container text-center">
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/healthamp.png">
+          </div>
+          <div class="info inline-display">
+            <p class="project-title">HealthAMP</p>
+            <p><span class="info-highlight">About:</span> A health web application written in JavaScript using MEAN stack. Provides health information on how to supplement diets and allows users to keep track of their health. Users can plan/customize their own todo list of what supplements to eat to better their health.
+                                  </p>  
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
+            <a class="project-link no-underline" href="http://healthamp.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+          </div>
+        </div>
+        <div class="project-container text-center">
+          <div class="snapshot inline-display">
+            <img class="project-img" src="images/pledge.png">
+          </div>
+          <div class="info inline-display">
+            <p class="project-title">Pledge-A-Thon</p>
+            <p><span class="info-highlight">About:</span> MasterCard Hackathon 2015 submission, Pledge-A-Thon is a charity application that allows people to sponsor volunteers to raise donations for a chosen charity.</p>  
+            <p><span class="info-highlight">Technologies used:</span> JavaScript, AngularJS, Node.js, MongoDB, HTML5, CSS3</p>
+            <a class="project-link no-underline" href="http://pledgeathon.herokuapp.com/" target="_blank"><button>Link to site</button></a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+  <footer class="text-center">
+    <h1 class="text-uppercase footer-title no-margin-top">A bit about myself</h1>
+    <img src="images/portfoliopic.jpg">
+    <h3>Currently living in San Jose, California</h3>
+    <h3>When I'm not working on projects, you can find me restaurant hopping, trying every exotic cuisine possible, or going to interesting events around the Bay Area.</h3>
+    <h3>Having grown up in New York City and being still relatively new to the area, I enjoy exploring the beautiful outdoors of California.</h3>
+    <h3>One of my favorite things to do is play video games, and I love going to gaming conventions</h3>
+    <h3 class="no-margin-bottom">I am currently open to opportunities as a front end engineer. Please feel free to reach out!</h3>
+  </footer>
 
 </body>
 </html>
