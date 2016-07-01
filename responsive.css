@@ -1,3 +1,11 @@
+@media (min-width: 1046px) {
+  #normal-view {
+    display: block;
+  }
+  #mobile-view {
+    display: none;
+  }
+}
 @media (max-width: 1045px) {
   #normal-view {
     display: none;
