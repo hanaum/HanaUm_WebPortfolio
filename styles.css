@@ -215,6 +215,10 @@ img {
   border-radius: 3%;
 }
 
+.github-link {
+  margin-top: 5px;
+}
+
 .project-title {
   font-weight: 600;
   font-size: 1.4375em;
